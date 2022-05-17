@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Courgette&family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <title>Welcome to Usteaps</title>
 </head>
 <body>
@@ -25,9 +26,9 @@
 
         <div class="text-box">
                 <h1>Umbrella Academy</h1>
-                <h2>Where education meets excellence</h2>
+                <h2>Where education meets excellence</h2><br>
                 <p>Home of thousands of heroes that conquers the world
-                in sciences, sports, arts and justice.</p>
+                in sciences, sports, <br> arts and justice.</p>
                 <a href="../main/login.php" class="hero-btn">Login Now</a>
         </div>
     </section>

@@ -50,7 +50,7 @@ nav img {
     content: '';
     width: 0%;
     height: 2px;
-    background: #ce36f4;
+    background: #ff4d4d;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -65,31 +65,34 @@ nav img {
     color: black;
     position: absolute;
     top: 45%;
-    left: 30%;
+    left: 35%;
     transform: translate(-50%,-50%);
 }
 
 .text-box h1{
-    font-size: 36px;
+    font-size: 52px;
     font-weight: 400;
+    font-family: 'Anton', sans-serif;
 }
 
 .text-box h2{
-    font-size: 43px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Courgette', cursive;
 }
 
 .text-box p{
     margin: 10px 0 40px;
     font-size: 24px;
     line-height: 40px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hero-btn {
     position: relative;
     text-decoration: none;
     margin-top: 2rem;
-    background-color: violet;
+    background-color: #ff8080;
     padding: 10px 30px;
     font-weight: 900;
     border-radius: 9px;
@@ -101,7 +104,7 @@ nav img {
 }
 
 .hero-btn:hover {
-    background: rgb(240, 114, 240);
+    background: #ff4d4d;
     
 }
 
@@ -323,7 +326,7 @@ nav img {
     position: relative;
     text-decoration: none;
     margin-top: 2rem;
-    background-color: rgb(155, 72, 155);
+    background-color: #ff4d4d;
     padding: 10px 30px;
     font-weight: 600;
     border-radius: 9px;
@@ -339,7 +342,7 @@ nav img {
     text-align: center;
     padding: 30px 0;
     font-weight: 600;
-    background-color: rgba(237, 147, 240, 0.7);
+    background-color: #ff4d4d;
 }
 
 .footer p{

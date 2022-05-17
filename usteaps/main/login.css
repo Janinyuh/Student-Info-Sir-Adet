@@ -61,7 +61,7 @@ input[type="password"] {
     border-radius: 8px;
     font-size: 18px;
     padding: 1rem;
-    background-color: violet;
+    background-color: #ff8080;
     color: white;
     cursor: pointer;
     text-decoration: none;
@@ -77,7 +77,7 @@ input[type="password"] {
 }
 
 .login-container button:hover {
-    background-color: rgb(221, 147, 221);
+    background-color: #ff4d4d;
 }
 
 /* LOGIN LOGO AND PICTURE */
@@ -101,5 +101,6 @@ input[type="password"] {
     left: 13rem;
     bottom: 18rem;
     width: 100%;
+    font-family: 'Courgette', cursive;
 }
 

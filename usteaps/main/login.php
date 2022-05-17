@@ -36,6 +36,7 @@
     
     <article>
         <div id="main-article">
+            <br>
             <p>Where education meets excellence</p>
         </div>
     </article>

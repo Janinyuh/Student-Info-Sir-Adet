@@ -15,19 +15,23 @@
 .header-box{
 	background-size: cover;
 	height: 60px;
-	background-color: #F2C12E;
+	background-color: #001133;
 	border-radius: 8px;
 	margin-bottom: 10%;
 }
 
 .Ayuda{
-		width: 30%;
+	width: 30%;
     position: absolute;
     left: 55%;
     top: 6%;
     transform: translate(-50%, -50%);
     font-size: 30px;
     letter-spacing: 30px;
+}
+
+.Ayuda h1{
+	color: white;
 }
 
 .container{
@@ -74,16 +78,16 @@
 
 .button-container a {
     float: left;
-    border: 1px solid skyblue;
-    background: rgb(151, 2, 165);
+    background: #ff8080;
     padding: 8px 10px 8px 10px;
     color: white;
     text-decoration: none;
     letter-spacing: 2px;
+    border-radius: 9px;
 }
 
 .button-container a:hover{
-    background-color: rgb(122, 1, 133) ;
+    background-color: #ff4d4d;
 }
 
 /*Resize the wrap to see the search bar change!*/
@@ -195,7 +199,7 @@ nav ul li a:hover{
 .scrollable th {
 	color: white;
 	font-stretch: 3%;
-  background: #4E96A6;
+  background: #001133;
   z-index: 2;
   top: 0;
 }
