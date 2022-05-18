@@ -27,7 +27,7 @@ $con = connection();
 
 <form action="server.php" method="post">
     <div class="container">
-        <h2>Sign up to USTEAPS</h2>
+        <h2>Sign up to Umbrella Academy</h2>
         <input type="text" name="username" placeholder="ID Number or Name" required>
         <input type="password" name="password" placeholder="Password" required>
         <input type="text" name="access" placeholder="Access" required>
@@ -43,8 +43,7 @@ $con = connection();
     
     <article>
         <div id="main-article">
-            <p>Choose from many highly qualified
-                and trusted Tutors</p>
+            <p>Here in our academy, we offer only excellence</p>
         </div>
     </article>
 
