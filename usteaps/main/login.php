@@ -47,7 +47,7 @@ if(isset($_POST['login'])){
     <div class="login-container">
         <a href="../newdesign/index.php"> <-Back</a>
 
-        <h2>Login to USTEAPS</h2>
+        <h2>Login to Umbrella Academy</h2>
         
         
 <form action="" method="post">

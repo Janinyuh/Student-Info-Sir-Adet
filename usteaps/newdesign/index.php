@@ -37,63 +37,62 @@
     
     <section class="campus">
         <h1>Our Campus</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, architecto!</p>
+        <p>We learn in reality with a touch of imagination</p>
 
         <div class="row">
             <div class="campus-col">
                 <img src="../imgs/campus.jpg" alt="ustp campus">
                 <div class="layer">
-                    <h3>USTP-CDO</h3>
+                    <h3>UA</h3>
                 </div>
             </div>
             <div class="campus-col">
                 <img src="../imgs/campusbldg.jpg" alt="ustp campus">
                 <div class="layer">
-                    <h3>USTP-CDO</h3>
+                    <h3>UA</h3>
                 </div>
             </div>
             <div class="campus-col">
                 <img src="../imgs/campus-1.jpg" alt="ustp campus">
                 <div class="layer">
-                    <h3>USTP-CDO</h3>
+                    <h3>UA</h3>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="facilities">
-        <h1>Our Facilities</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, culpa.</p>
+        <h1>We Offer</h1>
+        <p>Learning is best with passion that is recognized</p>
 
         <div class="row">
             <div class="facilities-col">
                 <img src="../imgs/library5.jpg" alt="">
-                <h3>University Library</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, laudantium!</p>
+                <h3>Dance Class</h3>
+                <p>Elegant Dancing</p>
             </div>
             <div class="facilities-col">
                 <img src="../imgs/court.jpg" alt="">
-                <h3>USTP Court</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, laudantium!</p>
+                <h3>Theatre Class</h3>
+                <p>Heroic Acting</p>
             </div>
             <div class="facilities-col">
                 <img src="../imgs/cafeteria.jpg" alt="">
-                <h3>Cafeteria</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, laudantium!</p>
+                <h3>Academy Clubs</h3>
+                <p>Active Ledearship</p>
             </div>
         </div>
     </section>
 
     <section class="testimonial">
         <h1>What Our Students Says</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, impedit!</p>
+        <p>We have ears for everyone</p>
 
         <div class="row">
             <div class="testimonial-col">
-                <img src="../imgs/arnel.jpg">
+                <img src="../imgs/flin.jpg">
                 <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Quaerat animi saepe, accusantium sunt repellat tempore</p>
+                    <p>Life is boring but here in academy, your life would be as cool as f-fancy</p>
                     <h3>Arnel Pudiquit</h3>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -104,10 +103,9 @@
                 </div>
             </div>
             <div class="testimonial-col">
-                <img src="../imgs/dolly1.jpg">
+                <img src="../imgs/bobie.jpg">
                 <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Quaerat animi saepe, accusantium sunt repellat tempore</p>
+                    <p>The best school, y'all should enroll here</p>
                     <h3>Dolly Velasco</h3>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -122,37 +120,31 @@
 
     <section class="course">
         <h1>Subjects We Offer</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quos?</p>
+        <p>Here in our academy, we only offer nothing but excellence in each subjects</p>
 
         <div class="row">
             <div class="course-col">
                 <h3>Programming</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                     Atque praesentium, repudiandae consequuntur autem possimus 
-                     facilis maxime perspiciatis provident totam incidunt?</p>
+                <p>Let the code blooded run into your veins</p>
             </div>
             <div class="course-col">
-                <h3>Information Management</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                     Atque praesentium, repudiandae consequuntur autem possimus 
-                     facilis maxime perspiciatis provident totam incidunt?</p>
+                <h3>Calculus</h3>
+                <p>Math may be hard but not in this academy, we offer the easiest ways</p>
             </div>
             <div class="course-col">
-                <h3>Database</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                     Atque praesentium, repudiandae consequuntur autem possimus 
-                     facilis maxime perspiciatis provident totam incidunt?</p>
+                <h3>Literature</h3>
+                <p>Let the words open your imagination with the touch of our guidance</p>
             </div>
         </div>
     </section>
 
     <section class="cta">
-        <h1>Enroll for our various online tutors <br> Anywhere inside the univisery!</h1>
+        <h1>Enroll to the Best Academy! <br> Let our powers unite for the better world</h1>
         <a href="#" class="hero-btn-1">Contact us!</a>
     </section>
 
     <section class="footer">
-        <p>Copyright &copy; 2021, Group 2 System Integration and Architecture</p>
+        <p>Copyright &copy; 2022, Madame Corporation</p>
             <div class="icons">
                 <i class="fa fa-facebook-square" aria-hidden="true"></i>
                 <i class="fa fa-twitter-square" aria-hidden="true"></i>
