@@ -20,7 +20,6 @@
                <ul>
                 <li><a href="../newdesign/index.php">Home</a></li>
                 <li><a href="../main/about.php">About us</a></li>
-                <li><a href="../main/contact.php">Contact a tutor</a></li>
                 <li> | </li>
                 <li><a href="../main/login.php">Login</a></li>
                </ul>

@@ -18,7 +18,6 @@
                 <ul>
                     <li><a href="../newdesign/index.php">Home</a></li>
                     <li><a href="../main/about.php">About Us</a></li>
-                    <li><a href="../main/contact.php">Contact a Tutor</a></li>
                     <li><span>|</span></li>
                     <li><a href="../main/login.php">Login</a></li>
                 </ul>
@@ -93,7 +92,7 @@
                 <img src="../imgs/flin.jpg">
                 <div>
                     <p>Life is boring but here in academy, your life would be as cool as f-fancy</p>
-                    <h3>Arnel Pudiquit</h3>
+                    <h3>Flin</h3>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -106,7 +105,7 @@
                 <img src="../imgs/bobie.jpg">
                 <div>
                     <p>The best school, y'all should enroll here</p>
-                    <h3>Dolly Velasco</h3>
+                    <h3>Millie</h3>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
