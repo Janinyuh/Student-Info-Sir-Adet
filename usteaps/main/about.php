@@ -27,20 +27,19 @@
             </div>
             <div class="contact-info">
                 <ul>
-                    <li><a href="#">Contact #: 2019100635 </a></li>
+                    <li><a href="#">Contact #: 0935 099 5290 </a></li>
                 </ul>
             </div>
         </div>
         <div class="banner">
             <div class="app-text">
-                <h1><span>Help available</span></h1>
-                <h2><span>in vast variety of subjects!</span></h2>
+                <h1><span>The Umbrella Academy</span></h1>
+                <h2><span>Where education meets excellence</span></h2>
                 <h3><span>
-                    You just bring the brain and we will take care of the rest.
-                    Are you ready to bring the lesson home? Whether you prefer your dorm room,
-                     home or a cafe, just make sure you have a wi-fi connection to start your session.
-                      Choose a location of your convenience or wherever you 
-                       feel most comfortable to begin learning. </span></h3>
+                    Our academy is the home of excellence in all fields; in academe,
+                arts, sports and leadership. This world class academy started during
+            the birth of 7 heroes that made our world better. Now, the academy is nurturing
+        thousands of students that will make the world the best.</span></h3>
             </div>
         </div>
     </div>

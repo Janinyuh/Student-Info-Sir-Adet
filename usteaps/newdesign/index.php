@@ -26,10 +26,10 @@
         </nav>
 
         <div class="text-box">
-                <h1>USTEAPS Learning</h1>
-                <h2>with quality online tutoring!</h2>
-                <p>We are a pocket-friendly solution to all your online tutoring needs. 
-                    Access the best tutors online and get 24/7 instant study help now.</p>
+                <h1>Umbrella Academy</h1>
+                <h2>Where education meets excellence</h2>
+                <p>Home of thousands of heroes that conquers the world
+                in sciences, sports, arts and justice.</p>
                 <a href="../main/register.php" class="hero-btn">Sign Up Now</a>
         </div>
     </section>
