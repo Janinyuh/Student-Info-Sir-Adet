@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "arial";
+    margin-top: 5vh;
+}
+
+#form-login {
+    background-image: url(../imgs/loginbg.png);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+#home {
+    margin-left: 15rem;
+    margin-top: 50px;
+    margin-bottom: -30px;
+  
+}
+
+#home a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    margin-left: 15rem;
+    width: 30%;
+    margin-top: 10vh;
+    height: auto;
+}
+
+.container {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 4rem;
+    box-shadow: 5px 6px 18px darkgray;
+}
+
+.container button {
+    width: 100%;
+    letter-spacing: 6px;
+    padding: 12px;
+    font-size: 22px;
+    border: none;
+    color: black;
+    font-weight: 600;
+    background-color: rgb(162, 101, 241);
+    cursor: pointer;
+    border-radius: 30px;
+
+}
+
+.container a{
+    width: 100%;
+    letter-spacing: 6px;
+    padding: 12px;
+    font-size: 22px;
+    border: none;
+    color: black;
+    font-weight: 600;
+    background-color: rgb(162, 101, 241);
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.container button:hover {
+    background-color: rgb(149, 83, 236);
+}
+
+.container label {
+    display: block;
+    font-size: 22px;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+    width: 100%;
+    font-size: 22px;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+#course {
+    width: 100%;
+    font-size: 22px;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: gray;
+    margin-bottom: 2rem;
+    
+}
+
+#login-pic {
+    width: 31%;
+    margin-top: -30rem;
+    margin-left: 60rem;
+}
+
+#main-article {
+    width: 45%;
+    margin-left: 15rem;
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
