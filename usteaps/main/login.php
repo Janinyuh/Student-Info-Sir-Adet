@@ -20,7 +20,7 @@ if(isset($_POST['login'])){
     if($total > 0){
         $_SESSION['UserLogin'] = $row['username'];
         $_SESSION['Access'] = $row['access'];
-        header("location: try.php");
+        header("location: dashboard.php");
         
     }else{
         echo "No user found. Please create an account.";
@@ -69,16 +69,12 @@ if(isset($_POST['login'])){
         <div id="login-pic">
             <img src="../imgs/login-bg3.png" alt="background">
         </div>
-        <div id="login-logo">
-            <img src="../imgs/textlogo.png" alt="logo">
-        </div>
+
     </aside>
     
     <article>
         <div id="main-article">
-            <p>USTEAPS is committed to providing excellent tutoring experience
-                to each student. Sign Up now to enhance your learning capabilities
-                with assistance from highly qualified student tutors.</p>
+            <p>Where education meets excellence</p>
         </div>
     </article>
 
