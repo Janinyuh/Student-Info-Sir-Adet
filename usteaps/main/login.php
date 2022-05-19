@@ -1,37 +1,3 @@
-<?php
-
-if(!isset($_SESSION)){
-    session_start();
-}
-
-include_once("../connection/connections.php");
-$con = connection();
-
-if(isset($_POST['login'])){
-    
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    $sql = "SELECT * FROM student_users WHERE username = '$username' AND password = '$password'";
-    $user = $con->query($sql) or die($con->error);
-    $row = $user->fetch_assoc();
-    $total = $user->num_rows;
-
-    if($total > 0){
-        $_SESSION['UserLogin'] = $row['username'];
-        $_SESSION['Access'] = $row['access'];
-        header("location: try.php");
-        
-    }else{
-        echo "No user found. Please create an account.";
-    }
-
-}
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,7 +16,7 @@ if(isset($_POST['login'])){
         <h2>Login to Umbrella Academy</h2>
         
         
-<form action="" method="post">
+<form action="login-check.php" method="post">
     <div class="form-element">
         
             <input type="text" name="username" id="username" placeholder="Username">
@@ -67,10 +33,10 @@ if(isset($_POST['login'])){
 
 <aside>
         <div id="login-pic">
-            <img src="../imgs/login-bg3.png" alt="background">
+            <img src="../imgs/test3.png" alt="background">
         </div>
         <div id="login-logo">
-            <img src="../imgs/textlogo.png" alt="logo">
+            <img src="../imgs/TEXT-LOGO-l2-Small.png" alt="logo">
         </div>
     </aside>
     
