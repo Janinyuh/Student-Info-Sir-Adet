@@ -7,8 +7,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Barangay Pandemic Management System - Ayuda</title>
-	<link rel="stylesheet" href="ayuda.css">
+	<title>Umbrella Academy Grades</title>
+	<link rel="stylesheet" href="dashboard.css">
 	<link href="https://fonts.googleapis.com/css2?family=Alata&family=Questrial&display=swap" rel="stylesheet">
 </head>
 
@@ -30,27 +30,24 @@
 </form>
 		
 			<div class="Ayuda">
-				<h1>AYUDA</h1>
+				<h1>Student Grades</h1>
 			</div>
 	</section>
 
-	<nav id="sideNav">
-		<ul>
-			<li><a href="dashboard.php">BACK</a></li>
-			<li><a href="settings.php">SETTINGS</a></li>
-			<li><a href="logout.php">LOGOUT</a></li>
-		</ul>
-	</nav>
-	<img src="images/menu.png" id="menu">
-
+	<div class="button-container">
+        <?php if(isset($_SESSION['UserLogin'])){?>
+            <a href="logout.php">Logout</a>
+        <?php } else { ?>
+            <a href="login.php">Login</a>
+            <?php } ?>
+    </div>
 <!-- start table ---->
 <div class="container-table">
 	<table class="table1">		
   <tr>
-    <th>Me</th>
-    <th>Amount</th>
-    <th>Date to Claim</th>
-    <th>Date Claimed</th>
+    <th>Subject Codes</th>
+    <th>Subject Name</th>
+    <th>Grades</th>
   </tr>
   <tbody>
 					<?php
@@ -71,7 +68,7 @@
 </table>
 
 <!--other table-->
-<h2 id="title2">My Neighbours</h2>
+<h2 id="title2">My 	Information</h2>
 <div class="scrollable">
 <table class="table2">
 	 <tbody>

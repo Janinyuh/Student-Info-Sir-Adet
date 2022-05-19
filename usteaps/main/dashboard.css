@@ -66,6 +66,25 @@
   cursor: pointer;
   font-size: 20px;
 }
+.button-container {
+    margin: 0;
+    float: right;
+    padding: 1rem 0 2rem 0;
+}
+
+.button-container a {
+    float: left;
+    border: 1px solid skyblue;
+    background: rgb(151, 2, 165);
+    padding: 8px 10px 8px 10px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.button-container a:hover{
+    background-color: rgb(122, 1, 133) ;
+}
 
 /*Resize the wrap to see the search bar change!*/
 .wrap{
