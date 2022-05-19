@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<?php
-	require_once 'validate.php';
-	require 'session.php';
-?>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -16,21 +12,13 @@
 	<section id="header">
 		<div class="header-box">
 			<span></span>
-			<img src="images/logo1.png" class="logo">
+			<img src="../imgs/TEXT-LOGO-l2-Small.png" class="logo">
 
 		</div>
-	<form action="aresult.php" method="get">
-	<div class="wrap">
-   <div class="search">
-      <input type="text" name="search" class="searchTerm" placeholder="Search">
-      <button type="submit" class="searchButton">
-     </button>
-   </div>
-</div>
-</form>
+	
 		
 			<div class="Ayuda">
-				<h1>Student Grades</h1>
+				<h1>GRADES</h1>
 			</div>
 	</section>
 
@@ -51,7 +39,7 @@
   </tr>
   <tbody>
 					<?php
-						require 'Connection/db_conn.php';
+						require '../connection/connections.php';
 						$query = $conn->query("SELECT name2, amount, date_toclaim, date_claimed FROM `ayuda` WHERE userID = ('$userID2');") or die(mysqli_error());
 						while($fetch = $query->fetch_array()){
 					?>
@@ -74,7 +62,7 @@
 	 <tbody>
 	 				<th>NAME</th>
 					<?php
-						require 'Connection/db_conn.php';
+						require '../connection/connections.php';
 						$query = $conn->query("SELECT ayuda.name2 FROM `ayuda` WHERE EXISTS (SELECT purok FROM users WHERE userID = ayuda.userID AND purok = ('$purok2') AND userID != ('$userID2'));") or die(mysqli_error());
 						while($fetch = $query->fetch_array()){
 					?>
