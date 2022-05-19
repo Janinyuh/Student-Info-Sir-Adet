@@ -1,24 +1,8 @@
 <?php
 
-function connection(){
+$sname= "localhost";
+$unmae= "root";
+$password = "";
+$db_name = "student_system";
 
-    $host = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "student_system";
-    
-    $con = new mysqli($host, $username, $password, $database);
-    
-    if($con->connect_error)
-    {
-        echo $con->connect_error;
-
-    }
-    else{
-
-        return $con;
-    }
-
-    
-
-}
+$conn = mysqli_connect($sname, $unmae, $password, $db_name);

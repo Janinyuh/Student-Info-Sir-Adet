@@ -18,7 +18,6 @@
                 <ul>
                     <li><a href="../newdesign/index.php">Home</a></li>
                     <li><a href="../main/about.php">About Us</a></li>
-                    <li><span>|</span></li>
                     <li><a href="../main/login.php">Login</a></li>
                 </ul>
             </div>
@@ -29,7 +28,7 @@
                 <h2>Where education meets excellence</h2>
                 <p>Home of thousands of heroes that conquers the world
                 in sciences, sports, arts and justice.</p>
-                <a href="../main/register.php" class="hero-btn">Sign Up Now</a>
+                <a href="../main/login.php" class="hero-btn">Login Now</a>
         </div>
     </section>
 

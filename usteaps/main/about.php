@@ -24,11 +24,6 @@
                 <li><a href="../main/login.php">Login</a></li>
                </ul>
             </div>
-            <div class="contact-info">
-                <ul>
-                    <li><a href="#">Contact #: 0935 099 5290 </a></li>
-                </ul>
-            </div>
         </div>
         <div class="banner">
             <div class="app-text">

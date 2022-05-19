@@ -1,8 +1,7 @@
-<?php
-
+<?php 
 session_start();
-unset($_SESSION['UserLogin']);
-unset($_SESSION['Access']);
-header('Location: ../newdesign/index.php')
 
-?>
+session_unset();
+session_destroy();
+
+header("Location: ../newdesign/index.php");

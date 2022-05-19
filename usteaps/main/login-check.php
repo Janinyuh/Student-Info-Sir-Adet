@@ -15,39 +15,36 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     $password = validate($_POST['password']);
 
     if (empty($username)) {
-        header("Location: login.php?error=User ID is required");
+        header("Location: login.php");
         exit();
     }else if(empty($password)){
-        header("Location: login.php?error=Password is required");
+        header("Location: login.php");
         exit();
     }else{
         // hashing the password
-        $password = md5($password);
 
         
-        $sql = "SELECT * FROM users WHERE userID='$userID' AND password='$password'";
+        $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
 
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) === 1) {
             $row = mysqli_fetch_assoc($result);
-            if ($row['userID'] === $userID && $row['password'] === $password && $row['role'] == 'user' ) {
-                $_SESSION['purok'] = $row['purok'];
-                $_SESSION['userID'] = $row['userID'];
+            if ($row['username'] === $username && $row['password'] === $password && $row['access'] == 'User' ) {
+                $_SESSION['username'] = $row['username'];
                 header("Location: dashboard.php");
                 exit();
-            }else if ($row['userID'] === $userID && $row['password'] === $password && $row['role'] == 'admin' ) {
-                $_SESSION['purok'] = $row['purok'];
-                $_SESSION['userID'] = $row['userID'];
-                header("Location: home page/home.php");
+            }else if ($row['username'] === $username && $row['password'] === $password && $row['access'] == 'Administrator' ) {
+                $_SESSION['username'] = $row['username'];
+                header("Location: add grades.php");
                 exit();
             }
             else{
-                header("Location: login.php?error=Incorect user ID or password");
+                header("Location: login.php");
                 exit();
             }
         }else{
-            header("Location: login.php?error=Incorect user ID or password");
+            header("Location: login.php");
             exit();
         }
     }

@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+	require_once 'validate.php';
+	require 'session.php';
+?>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -22,53 +26,33 @@
 			</div>
 	</section>
 
-	<div class="button-container">
-        <?php if(isset($_SESSION['UserLogin'])){?>
+	<div class="button-container">    
             <a href="logout.php">Logout</a>
-        <?php } else { ?>
-            <a href="login.php">Login</a>
-            <?php } ?>
     </div>
-<!-- start table ---->
-<div class="container-table">
-	<table class="table1">		
-  <tr>
-    <th>Subject Codes</th>
-    <th>Subject Name</th>
-    <th>Grades</th>
-  </tr>
-  <tbody>
-					<?php
-						require '../connection/connections.php';
-						$query = $conn->query("SELECT name2, amount, date_toclaim, date_claimed FROM `ayuda` WHERE userID = ('$userID2');") or die(mysqli_error());
-						while($fetch = $query->fetch_array()){
-					?>
-						<tr>
-							<td><?php echo $fetch['name2']?></td>
-							<td><?php echo $fetch['amount']?></td>
-							<td><?php echo $fetch['date_toclaim']?></td>
-							<td><?php echo $fetch['date_claimed']?></td>
-						</tr>
-					<?php
-						}
-					?>	
-					</tbody>
-</table>
 
-<!--other table-->
+<br><br>
+ <!--other table-->
 <h2 id="title2">My 	Information</h2>
 <div class="scrollable">
 <table class="table2">
 	 <tbody>
+	 				<th>ID Number</th>
 	 				<th>NAME</th>
+	 				<th>Gender</th>
+	 				<th>Course</th>
+	 				<th>Year</th>
 					<?php
 						require '../connection/connections.php';
-						$query = $conn->query("SELECT ayuda.name2 FROM `ayuda` WHERE EXISTS (SELECT purok FROM users WHERE userID = ayuda.userID AND purok = ('$purok2') AND userID != ('$userID2'));") or die(mysqli_error());
+						$query = $conn->query("SELECT idnumber, name, gender, course, cyear  FROM `information` WHERE idnumber = ('$username');") or die(mysqli_error());
 						while($fetch = $query->fetch_array()){
 					?>
 							
 						<tr>
-							<td><?php echo $fetch['name2']?></td>
+							<td><?php echo $fetch['idnumber']?></td>
+							<td><?php echo $fetch['name']?></td>
+							<td><?php echo $fetch['gender']?></td>
+							<td><?php echo $fetch['course']?></td>
+							<td><?php echo $fetch['cyear']?></td>
 						</tr>
 					<?php
 						}
@@ -79,6 +63,31 @@
 </div>
 </div>
 <!-- end table ---->
+<!-- start table ---->
+<div class="container-table">
+	<table class="table1">		
+  <tr>
+    <th>Subject Codes</th>
+    <th>Subject Name</th>
+    <th>Grade</th>
+  </tr>
+  <tbody>
+					<?php
+						require '../connection/connections.php';
+						$query = $conn->query("SELECT scode, sname, sgrade FROM `grades` WHERE idnumber = ('$username');") or die(mysqli_error());
+						while($fetch = $query->fetch_array()){
+					?>
+						<tr>
+							<td><?php echo $fetch['scode']?></td>
+							<td><?php echo $fetch['sname']?></td>
+							<td><?php echo $fetch['sgrade']?></td>
+						</tr>
+					<?php
+						}
+					?>	
+					</tbody>
+</table>
+
 
 
 
@@ -103,7 +112,7 @@
 	<div class="container footer-row">
 		<hr>
 		<div class="footer-left-col">
-			<p>© The Barangay Pandemic Management System</p>
+			<p>© Umbrella Academy Grades</p>
 		</div>
 	</div>
 </section>

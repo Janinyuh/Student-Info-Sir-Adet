@@ -188,8 +188,7 @@ nav ul li a:hover{
 /* The scrollable part */
 
 .scrollable {
-  height: 300px;
-  overflow-y: scroll;
+  height: 125px;
   border-bottom: 1px solid #ddd;
 }
 

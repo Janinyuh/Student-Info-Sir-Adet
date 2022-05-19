@@ -24,10 +24,7 @@
             <input type="password" name="password" id="password" placeholder = "Password">
     </div>
         <button type="submit" name="login">Login</button>
-            <h3>Don't have an account?</h3>
-        <button type="Submit" name="login">
-            <a href="register.php">CREATE ACCOUNT</a>
-        </button>
+            
     </div>
 </form>
 
