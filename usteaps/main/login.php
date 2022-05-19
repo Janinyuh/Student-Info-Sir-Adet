@@ -33,18 +33,13 @@
 
 <aside>
         <div id="login-pic">
-            <img src="../imgs/test3.png" alt="background">
-        </div>
-        <div id="login-logo">
-            <img src="../imgs/TEXT-LOGO-l2-Small.png" alt="logo">
+            <img src="../imgs/login-bg3.png" alt="background">
         </div>
     </aside>
     
     <article>
         <div id="main-article">
-            <p>USTEAPS is committed to providing excellent tutoring experience
-                to each student. Sign Up now to enhance your learning capabilities
-                with assistance from highly qualified student tutors.</p>
+            <p>Where education meets excellence</p>
         </div>
     </article>
 
