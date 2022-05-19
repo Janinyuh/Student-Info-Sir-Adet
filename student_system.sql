@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2022 at 03:40 AM
+-- Generation Time: May 19, 2022 at 07:00 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -28,12 +28,11 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `grades` (
-  `sgid` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `sgid` int(11) NOT NULL,
   `idnumber` varchar(255) NOT NULL,
   `scode` varchar(255) NOT NULL,
   `sname` varchar(255) NOT NULL,
-  `sgrade` varchar(255) NOT NULL,
-  FOREIGN KEY (idnumber) REFERENCES users(username)
+  `sgrade` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -41,7 +40,9 @@ CREATE TABLE `grades` (
 --
 
 INSERT INTO `grades` (`sgid`, `idnumber`, `scode`, `sname`, `sgrade`) VALUES
-(1, '2019100724', 'IT321', 'CAPSTONE Project and Research 1', '1.75');
+(1, '2019100724', 'IT321', 'CAPSTONE Project and Research 1', '1.75'),
+(2, '2019100724', 'FreeElec', 'Foreign Language', '2.00'),
+(3, '2019100724', 'IT325', 'IT Elective 2', '1.75');
 
 -- --------------------------------------------------------
 
@@ -50,14 +51,20 @@ INSERT INTO `grades` (`sgid`, `idnumber`, `scode`, `sname`, `sgrade`) VALUES
 --
 
 CREATE TABLE `information` (
-  `infoid` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `infoid` int(11) NOT NULL,
   `idnumber` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `gender` varchar(255) NOT NULL,
   `course` varchar(255) NOT NULL,
-  `cyear` varchar(255) NOT NULL, 
-  FOREIGN KEY (idnumber) REFERENCES users(username)
+  `cyear` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `information`
+--
+
+INSERT INTO `information` (`infoid`, `idnumber`, `name`, `gender`, `course`, `cyear`) VALUES
+(1, '2019100724', 'Julianne Marie Bajao', 'Female', 'Bachelor of Science in Information Technology', '3rd Year');
 
 -- --------------------------------------------------------
 
@@ -66,7 +73,7 @@ CREATE TABLE `information` (
 --
 
 CREATE TABLE `users` (
-  `username` varchar(255) NOT NULL PRIMARY KEY,
+  `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `access` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -76,8 +83,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`username`, `password`, `access`) VALUES
-( '2019100562', '123', 'User'),
-( '2019100722', '123', 'User'),
+('2019100562', '123', 'User'),
+('2019100722', '123', 'User'),
 ('2019100724', '123', 'User'),
 ('admin', 'admin', 'Administrator');
 
@@ -110,10 +117,16 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `grades`
+--
+ALTER TABLE `grades`
+  MODIFY `sgid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `information`
 --
 ALTER TABLE `information`
-  MODIFY `infoid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `infoid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables
