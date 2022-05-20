@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2022 at 07:00 AM
+-- Generation Time: May 20, 2022 at 05:35 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -42,7 +42,9 @@ CREATE TABLE `grades` (
 INSERT INTO `grades` (`sgid`, `idnumber`, `scode`, `sname`, `sgrade`) VALUES
 (1, '2019100724', 'IT321', 'CAPSTONE Project and Research 1', '1.75'),
 (2, '2019100724', 'FreeElec', 'Foreign Language', '2.00'),
-(3, '2019100724', 'IT325', 'IT Elective 2', '1.75');
+(3, '2019100724', 'IT325', 'IT Elective 2', '1.75'),
+(4, '2019100562', 'IT321', 'CAPSTONE Project and Research 1', '1.50'),
+(5, '2019100722', 'IT325', 'IT Elective 2', '1.75');
 
 -- --------------------------------------------------------
 
@@ -64,7 +66,9 @@ CREATE TABLE `information` (
 --
 
 INSERT INTO `information` (`infoid`, `idnumber`, `name`, `gender`, `course`, `cyear`) VALUES
-(1, '2019100724', 'Julianne Marie Bajao', 'Female', 'Bachelor of Science in Information Technology', '3rd Year');
+(1, '2019100724', 'Julianne Marie Bajao', 'Female', 'Bachelor of Science in Information Technology', '3rd Year'),
+(2, '2019100722', 'Rhegie Joy Ayag', 'Female', 'Bachelor of Science in Information Technology', '3rd Year'),
+(3, '2019100562', 'Janina Briones', 'Female', 'Bachelor of Science in Information Technology', '3rd Year');
 
 -- --------------------------------------------------------
 
@@ -120,13 +124,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `grades`
 --
 ALTER TABLE `grades`
-  MODIFY `sgid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `sgid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `information`
 --
 ALTER TABLE `information`
-  MODIFY `infoid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `infoid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
